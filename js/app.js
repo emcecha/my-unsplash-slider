@@ -58,15 +58,10 @@ function btnOnMouseout(event) {
     this.classList.remove("button-mouseover");
 }
 
-function btnOnMouseKeyDown(event) {
+function btnOnMousedown(event) {
     this.classList.add("button-mousedown");
 }
 
-function btnOnMouseKeyUp() {
+function btnOnMouseup() {
     this.classList.remove("button-mousedown");
 }
-
-window.addEventListener("keydown", function (event) {
-    console.log(1);
-    console.log(event);
-})
